@@ -1,0 +1,85 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: Josefin Sans, Cambria, serif;
+    margin: 0;
+}
+
+h1, h2{
+    text-transform: uppercase;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.projects{
+    display: grid;
+    grid-gap: 1%;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+@media(min-width:768px){
+    .projects{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.project-tile{
+    list-style: none;
+    padding: 10px 10px;
+}
+
+#project-icon{
+    height: 300px;
+    width: 300px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: transparent;
+    font-family: DM Serif Display;
+    text-transform: lowercase;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+#project-icon:hover{
+    color: white;
+}
+
+.project-icon-1{
+    background-image: url("img/tcg.png");
+}
+
+.project-icon-2{
+    background-image: url("img/snake.png");
+}
+
+.project-icon-3{
+    background-image: url("img/gallery.png");
+}
+
+.project-icon-4{
+    background-image: url("img/calc.png");
+}
+
+.project-icon-5{
+    background-image: url("img/xmas.png");
+}
+
+.project-icon-6{
+    background-image: url("img/ts.png");
+}
+
+.project-name{
+    padding-top: 250px;
+    max-width: 300px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
